@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import confetti from 'canvas-confetti'
 import { Square } from './components/square'
-import { TURNS } from './constantes'
+import { TURNS } from './constants/constantes'
 import { checkWinner } from './logic/checkWinner'
 import { WinnerModal } from './components/WinnerModal'
 
