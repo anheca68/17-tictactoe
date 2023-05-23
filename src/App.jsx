@@ -43,7 +43,6 @@ function App () {
     setTurn(newTurn)
 
     // guardamos la partida --- newBoard, newTurn
-
     saveGame({ newBoard, newTurn })
 
     // validamos si tenemos un ganador
