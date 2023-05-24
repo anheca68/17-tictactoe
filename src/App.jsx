@@ -4,7 +4,7 @@ import { Square } from './components/square'
 import { TURNS } from './constants/constantes'
 import { checkWinner } from './logic/checkWinner'
 import { WinnerModal } from './components/WinnerModal'
-import { saveGame } from './storage'
+import { saveGame, resetGameStorage } from './storage'
 import './App.css'
 
 function App () {
@@ -25,7 +25,7 @@ function App () {
     setBoard(Array(9).fill(null))
     setTurn(TURNS.X)
     setWinner(null)
-    resetGame()
+    resetGameStorage()
   }
 
   const checkEndGame = (newBoard) => {
