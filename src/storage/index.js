@@ -1,6 +1,6 @@
-export const saveGame = ({ board, turn }) => {
-  window.localStorage.setItem('board', JSON.stringify(board))
-  window.localStorage.setItem('turn', JSON.stringify(turn))
+export const saveGame = ({ newBoard, newTurn }) => {
+  window.localStorage.setItem('board', JSON.stringify(newBoard))
+  window.localStorage.setItem('turn', JSON.stringify(newTurn))
 }
 
 export const resetGameStorage = () => {
